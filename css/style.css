@@ -20,9 +20,12 @@ html, body {
 }
 
 #header #h-progressbar {
-  width: 50%;
+  width: 0;
   height: 5px;
-  background: #ffa;
+  background: #610A9999;
+  border-radius: 0 0.3rem 0.3rem 0;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
 }
 
 #header #h-progressbar::before {

@@ -17,9 +17,12 @@ html,body{
   position: fixed;
   z-index: 99;
   #h-progressbar{
-    width: 50%;
+    width: 0;
     height: 5px;
-    background: #ffa;
+    background:#610A9999;
+    border-radius: 0 0.3rem 0.3rem 0;
+    transition: 0.25s;
+
     &::before{
       content: '';
       display: block;
