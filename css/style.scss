@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, '微軟正黑體';
+}
+
+html,body{
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+#header{
+  width: 100%;
+  position: fixed;
+  z-index: 99;
+  #h-progressbar{
+    width: 50%;
+    height: 5px;
+    background: #ffa;
+    &::before{
+      content: '';
+      display: block;
+      width: 100%;
+      height: 5px;
+      background: #fff;
+      position: absolute;
+      z-index: -1;
+    }
+  }
+}
+
+.section{
+  width: 100vw;
+  height: 100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size: 3rem;
+  font-weight: bold;
+  &:nth-child(even){
+    color: rgb(255, 255, 255);
+    text-shadow: 0.15rem 0.15rem 0 #0306;
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);  }
+}
